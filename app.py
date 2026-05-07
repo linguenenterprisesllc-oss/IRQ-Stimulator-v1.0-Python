@@ -588,7 +588,7 @@ elif st.session_state.page == "sim":
             answers["data_classification"]= st.selectbox("3. What type of data will the third party be handling?", ["— select —"] + DATA_CLASS_OPTS)
             answers["service_type"]       = st.selectbox("4. Select the type of vendor", ["— select —"] + VENDOR_TYPES)
             answers["pii"]                = st.selectbox("5. Will the vendor host, process, store or transmit PII?", ["— select —"] + ACCESS_OPTS)
-            answers["record_count"]       = st.selectbox("6. Number of records at risk", ["— select —"] + RECORD_OPTS)
+            answers["record_count"]       = st.selectbox("6. Estimated volume of records (PII, PHI, or PCI data) in scope for this engagement", ["— select —"] + RECORD_OPTS)
             answers["phi"]                = st.selectbox("7. Will the vendor host, process, store or transmit PHI?", ["— select —"] + ACCESS_OPTS)
             answers["internal_access"]    = st.selectbox("8. Will the vendor have access to company internal systems, applications or networks?", ["— select —"] + ACCESS_OPTS)
             answers["cloud_storage"]      = st.selectbox("9. Will the third party store data in the cloud?", ["— select —"] + YESNO_UNK)
